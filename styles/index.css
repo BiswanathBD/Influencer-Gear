@@ -1,0 +1,147 @@
+/* google font style */
+.Poppins{
+  font-family: Poppins;
+  font-style: normal;
+}
+
+/* common style */
+body{
+    max-width: 1200px;
+    margin: 0 auto;
+    color: rgba(58, 58, 58, 1);
+}
+a{
+    text-decoration: none;
+    color: rgba(58, 58, 58, 1);
+}
+
+/* navbar related style */
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-container{
+    display: flex;
+    list-style: none;
+
+    gap: 34px;
+    align-items: center;
+}
+.logo{
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+.nav-item{
+    font-size: 1rem;
+    font-weight: 600;
+}
+.search{
+    font-size: 1.5rem;
+}
+.cart{
+    font-size: 2rem;
+}
+
+/* hero section style */
+.hero-section{
+    display: flex;
+    gap: 10%;
+    align-items: center;
+    margin: 60px auto;
+}
+.hero-heading{
+    font-size: 3.33rem;
+    font-weight: 700;
+    margin-bottom: 16px;
+}
+.hero-contain p{
+    font-size: 1rem;
+    font-weight: 600;
+    margin-top: 0px;
+}
+.img1{
+    position: absolute;
+}
+.img2{
+    position: relative;
+    margin-top: 30px;
+}
+.hero-btn{
+    background-color: rgba(224, 44, 109, 1);
+    padding: 10px 24px;
+    border: none;
+    border-radius: 41px;
+    color: white;
+    font-weight: 700;
+    align-items: center;
+    margin-top: 8px;
+}
+
+/* collaboration brand style */
+.collab-brand{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
+    padding: 30px 60px;
+}
+.brand-border{
+    height: 2px;
+    border: none;
+    background: linear-gradient(to right, rgb(192, 204, 218, 0.1), rgb(192, 204, 218, 0.6), rgb(192, 204, 218, 0.1));
+}
+
+
+/* collection section style */
+.popular-collections{
+    margin: 100px 76px;
+}
+.collection-heading{
+    text-align: center;
+    font-size: 1.75rem;
+    font-weight: 600;
+}
+.collection-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+.product-card{
+    border-radius: 10px;
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.15);
+    padding: 15px;
+}
+.product-card img{
+    width: 100%;
+}
+.product-name{
+    font-size: 1.75rem;
+    font-weight: 500px;
+    margin: 15px 0;
+}
+.product-price{
+    font-size: 1.75rem;
+    font-weight: 400;
+    margin: 10px 0;
+}
+.star-rating{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 0;
+}
+.star-rating p{
+    font-weight: 700;
+    color: rgba(94, 99, 102, 0.8);
+    margin: 0;
+
+}
+.fa-star, .fa-star-half-stroke{
+    color: gold;
+    padding-bottom: 3px;
+}
+.product-desc{
+    font-weight: 700;
+    color: rgba(94, 99, 102, 0.8);
+}

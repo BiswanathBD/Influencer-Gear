@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    .star-rating {
+      direction: rtl;
+      display: inline-flex;
+      font-size: 2rem;
+    }
+
+    .star-rating input {
+      display: none;
+    }
+
+    .star-rating label {
+      color: lightgray;
+      cursor: pointer;
+      transition: color 0.2s;
+    }
+
+    .star-rating input:checked ~ label,
+    .star-rating label:hover,
+    .star-rating label:hover ~ label {
+      color: gold;
+    }
+  </style>
+</head>
+<body>
+
+<form class="star-rating">
+  <input type="radio" name="rating" id="5"><label for="5">★</label>
+  <input type="radio" name="rating" id="4"><label for="4">★</label>
+  <input type="radio" name="rating" id="3"><label for="3">★</label>
+  <input type="radio" name="rating" id="2"><label for="2">★</label>
+  <input type="radio" name="rating" id="1"><label for="1">★</label>
+</form>
+
+</body>
+</html>
