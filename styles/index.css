@@ -30,7 +30,6 @@ header{
 .nav-container{
     display: flex;
     list-style: none;
-
     gap: 34px;
     align-items: center;
 }
@@ -66,12 +65,14 @@ header{
     font-weight: 600;
     margin-top: 0px;
 }
-.img1{
-    position: absolute;
+.hero-img{
+    background-image: url(../images/Circle\ design.svg);
+    background-size: 100%;
+    background-repeat: no-repeat;
 }
-.img2{
-    position: relative;
-    margin-top: 30px;
+.banner-img{
+    margin: 30px 2px;
+    width: calc(100% - 30px);
 }
 .hero-btn{
     background-color: rgba(224, 44, 109, 1);
@@ -186,7 +187,6 @@ header{
 /* footer section */
 footer{
     background-color: rgba(10, 8, 38);
-    width: 100%;
     color: white;
     text-align: center;
     padding: 50px;
@@ -215,7 +215,88 @@ footer{
     height: 32px;
     border-radius: 50%;
 }
-/* .icon a{
-    text-decoration: none;
-    color: white;
-} */
+
+
+/* responsive for small device */
+@media screen and (max-width: 576px) {
+    body{
+        margin: 0;
+    }
+    main{
+        margin: 10px;
+    }
+    /* header section */
+    .logo{
+        margin: 10px;
+    }
+    .navbar{
+        flex-direction: column;
+    }
+    .nav-container{
+        padding: 0;
+        justify-content: space-between;
+        gap: 20px;
+        margin: 0;
+    }
+    .nav-item{
+        font-size: 0.8rem;
+        font-weight: 400;
+    }
+    .search{
+    font-size: 1rem;
+    }
+    .cart{
+    font-size: 1.5rem;
+    }
+    .hero-img{
+        max-width: 80%;
+        margin: 0 auto;
+    }
+    .hero-section{
+        flex-direction: column-reverse;
+        padding: 10px;
+        gap: 10px;
+        margin: 30px 10px;
+    }
+    .hero-heading{
+        font-size: 1.8rem;
+    }
+    .hero-contain{
+        text-align: center;
+    }
+    /* colaboration section */
+    .collab-brand{
+        padding: 10px;
+        gap: 20px 30px;
+    }
+    .brand-logo{
+        width: 18%;
+    }
+    /* popular collection section */
+    .popular-collections{
+        margin: 30px auto;
+    }
+    .collection-heading{
+        margin-bottom: 10px;
+        font-size: 1.25rem;
+    }
+    .collection-container{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    /* featured products section */
+    .featured-products{
+        flex-direction: column-reverse;
+        gap: 20px;
+        text-align: center;
+    }
+    .featured-heading{
+        font-size: 1.3rem;
+    }
+    .featured-image{
+        max-width: calc(100% - 10px);
+    }
+    /* footer section */
+    footer{
+        padding: 30px 10px;
+    }
+}
